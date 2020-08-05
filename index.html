@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<!-- NOTES FOR FUTURE SAKURA: 
+
+7/22
+1) the links aren't working in the content section? the navbar and the bottom bar both have working links but the link psots, the tags, and the permalinks aren't working?
+2) the bottom bar won't stay at the bottom of the page
+3) absolutely no idea how to get the images attached to the posts like i'm sorry but fuck dude
+
+7/23
+i'm going to try and hard code, like literally get rid of the concept of posts LMAO
+
+7/28 ^^ the above super works, especially since the only person who's ever going to be editing this page is me. let's finish up with that 
+-->
+
+    <head>
+       <title>B. Sakura Cannestra</title> 
+       <link rel="shortcut icon" href="{Favicon}" />
+       
+<!-- do i need any of the meta stuff??? i can just set these things?-->
+        <meta name="image:Navbar" content=""/>
+
+<!------------------------------ LINKS TO FONTS! ------------------------->
+    
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:bold,black|Raleway:medium,bolditalic,mediumitalic|Lora:bold' type='text/css'>
+    
+<style type="text/CSS">
+    
+body {
+    background-color: #f4f8fc;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+/********************** NAVBAR *******************************************/
+    
+#navbar {
+    background-color: #bad9e5;
+    width: 100%;
+    height: 120px;
+    border-bottom: solid 4px #123456;
+}
+
+#navbar .navbar-icon-holder {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 15px;
+    border-color: #538FB5;
+    border-style: solid;
+    background-color: #538FB5;
+    overflow: hidden;
+    position: relative;
+    top: 12px;
+    left: 6%;
+}
+
+#navbar .navbar-icon {
+    width: auto;
+    height: 110px;
+    margin: 15px;
+    overflow: hidden;
+    background-color: none;
+    position: relative;
+    bottom: 15px;
+    right: 60px;
+}
+
+
+#navbar .navbar-title {
+    font-family: 'Lora', serif;
+    font-size: 52px;
+    font-weight: 1000;
+    color: #123456;
+    position: relative;
+    bottom: 128px;
+    left: 25%;
+}
+
+#navbar #navbar-links {
+    position: relative;
+    bottom: 120px;
+    left: 24%;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic; 
+    font-size: 16px;
+    color: #f4f8fc;
+    height: 24px;
+}
+    
+#navbar #navbar-links .navbarlink {
+    background-color: #538FB5;
+    margin: 0 4px 0 4px;
+    padding: 2px 10px 2px 10px;
+    border-radius: 15px;
+}
+
+#navbar #navbar-links .navbarlink a {
+    color: #f4f8fc;
+    text-decoration: none;
+}
+
+#navbar #navbar-links .navbarlink a:hover {
+    color: #538FB5;
+}
+
+#navbar #navbar-links .navbarlink:hover {
+    background-color: #123456;
+}
+ 
+
+/* ----------------------------------------- END NAVBAR CSS ------------------------------------------ */
+  
+/* ----------------------------------------- BEGIN POST CSS -------------------------------------------*/  
+
+
+#contenttwo {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+#contenttwo #entry {
+    width: 240px;
+    background-color: #bad9e5;
+    border-radius: 56px;
+    margin: 12px;
+    padding: 0 0 8px 0;
+}
+
+#contenttwo #entry .entrytitle a {
+	text-decoration: none;
+	color: #123456;
+}
+
+#contenttwo #entry .entrytitle a:hover {
+	color: #f4f8fc;
+	text-decoration: underline;
+}
+
+#contenttwo #entry .journoimg {
+    width: 240px;
+    height: 160px;
+    margin: 0 0 10px 0;
+    background-color: #538FB5;
+    border-radius: 50px;
+}
+
+#contenttwo #entry .journoimg img {
+    width: 220px;
+    height: 140px;
+    margin: 10px;
+    padding: auto;
+    border-radius: 50px;
+}
+
+#contenttwo #entry .entrytitle {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #123456;
+    margin: 12px 12px 20px 12px;
+}
+
+
+/* ----------------------------------------- END POST CSS -------------------------------------------- */
+/* -------------------------------------- BEGIN BOTTOMBAR CSS ---------------------------------------- */
+ 
+
+#bottombar {
+    bottom: 0px;
+    width: 120%;
+    height: 100px;
+    background-color: #bad9e5;
+    margin-top: 80px;
+    border-top: solid 4px #123456;
+}
+
+#bottombar #socials {
+    position: relative;
+    left: 16%;
+    height: 40px;
+}
+
+
+#bottombar #socials .socialicon img {
+    background-color: #f4f8fc;
+    border-radius: 20px;
+    padding: 6px;
+    height: 34px;
+    width: 34px;
+    margin: 12px 4px 8px 4px;
+}
+
+#bottombar #socials .socialicon img:hover {
+    background-color: #123456;
+}
+
+#bottombar .copyright {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    position: relative;
+    top: 32px;
+    left: 16%;
+    color: #123456;
+}
+
+
+/*------------------------------------------------------- SCREEN ADJUSTMENTS/ADDENDUMS ------------------------------------------------*/
+
+
+@media screen and (max-width: 1200px) {
+	#contenttwo {
+		width: 900px;
+	}
+}
+
+</style>
+    
+    </head>
+    
+<!------------------------------------------------------ END OF CSS, BEGINNING OF HTML --------------------------------------------------------------------->
+    <body>
+        
+<!--------------------- NAVBAR ------------------------------------------> 
+        <div id="navbar">
+            <div class="navbar-icon-holder">
+               <img class="navbar-icon" src="{image:Navbar}"/>
+            </div>
+            <span class="navbar-title">B.S. Cannestra</span>
+
+            <div id="navbar-links">
+                <span class="navbarlink"><a href="/landing">About</a></span>
+                <span class="navbarlink"><a href="/tagged/journalism">Clips</a></span>
+            </div>
+            
+        </div>  
+        
+<!--------------------------- POSTS ------------------------------------->
+        <div id="contenttwo">
+                        <a name="topofpage"></a> 
+<!----------- here's the "back to the top" anchor! ---------------------->
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i2.wp.com/www.dailycal.org/assets/uploads/2018/05/Finance_rigel-robinson_Courtesy-copy.jpg?w=2106&ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2018/05/02/value-higher-education-uc-students-lobby-sacramento-state-funding/">‘Do you value higher education?’: UC students lobby in Sacramento for more state funding</a>
+                </div>
+            </div>
+            
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i0.wp.com/www.dailycal.org/assets/uploads/2017/09/daca_yukunzhang_file-copy.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2017/09/06/anger-uncertainty-uc-berkeley-trump-ends-daca/">Anger, uncertainty reign at UC Berkeley after Trump ends DACA</a>
+                </div>
+            </div>
+            
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2018/07/Bank_kavyaNarendra-Babu_staff-copy.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2018/07/11/uc-berkeleys-official-banks-parent-company-invests-ice-contracted-private-prison-companies/">Parent company of UC Berkeley’s official bank invests in ICE-contracted private prison companies</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2020/01/rename_boalt_amanda-ramirez_file.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2020/01/30/burden-of-the-history-uc-berkeley-removes-boalt-halls-name/">‘Burden of the history’: UC Berkeley removes Boalt Hall’s name</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2017/08/protest_xiaoyeyan_staff3.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2017/08/27/4000-gather-downtown-berkeley-alt-right-rally-police-arrest-7/">Thousands of counterprotesters flood Berkeley streets after canceled ‘alt-right’ rally</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2017/11/pattiz_sakuracannestra_staff-copy.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2017/11/15/uc-regent-norman-pattiz-im-not-going-resign/">UC Regent Norman Pattiz: ‘I’m not going to resign’</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i0.wp.com/www.dailycal.org/assets/uploads/2017/06/napolitano_rgarner_file-copy.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2019/09/18/uc-president-janet-napolitano-announces-resignation-after-6-years/">UC President Janet Napolitano announces resignation after 6 years</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i0.wp.com/www.dailycal.org/assets/uploads/2017/09/milo_lfrick_seniorstaff.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2017/09/24/milo-yiannopoulos-speaks-uc-berkeley-hundreds-protest-outside-barriers/">Milo Yiannopoulos makes brief speech at UC Berkeley as hundreds protest outside barriers</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2019/07/adress_nirvana-ellaboudy_staff.jpg?ssl=1"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2019/07/24/a-beacon-of-hope-berkeley-mayor-jesse-arreguin-delivers-state-of-the-city-address/">‘A beacon of hope’: Berkeley Mayor Jesse Arreguín delivers State of the City address</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2017/04/09/calserve-presidential-candidate-zaynab-abdulqadir-morris-seeks-increase-diversity-awareness-campus/">CalSERVE presidential candidate Zaynab AbdulQadir-Morris seeks to increase diversity awareness on campus</a>
+                </div>
+            </div>
+
+            <div id="entry">
+                <div class="journoimg">
+                    
+                </div>
+                <div class="entrytitle">
+                    <a href="https://www.dailycal.org/2018/11/01/student-action-announces-disaffiliation-with-senator-isabella-chow-over-anti-lgbtq-rhetoric/">Student Action cuts ties with Senator Isabella Chow over anti-LGBTQ+ views</a>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div id="invisiblebar">
+        </div>
+
+
+<!------------------------ ITS THE BOTTOM BAR !!! -------------------->        
+        <div id="bottombar">
+            <div id="socials">
+                <span class="socialicon"><a href="https://www.linkedin.com/in/bscannestra/" target="_blank"><img src="https://64.media.tumblr.com/464b62944e429a1da7bed1292ea032bb/524bc4942c5f92a3-e7/s500x750/e6815820189fca71848212355331c8d341633858.png"/></a></span>
+                <span class="socialicon"><a href="https://www.twitter.com/SakuCannestra" target="_blank"><img src="https://64.media.tumblr.com/c985b2165769320fb6ab640a958803f4/524bc4942c5f92a3-3a/s500x750/38ffa8f4c5ea3df87f571a2a32a4f39725964084.png"/></a></span>
+                <span class="socialicon"><a href="mailto:bearcannestra@gmail.com" target="_blank"><img src="https://64.media.tumblr.com/5cc65070293b87d2a46087b057092725/524bc4942c5f92a3-e4/s400x600/9f733e53c8c26d3a2e0475612a8d8c179db81179.png"/></a></span>
+                <span class="socialicon"><a href="https://www.instagram.com/beautifullybland/" target="_blank"><img src="https://64.media.tumblr.com/dc4df1c19c950ff5b956b5d135a019ac/524bc4942c5f92a3-ef/s400x600/02fc3a3befb2a0c07f9c68f3553de9a21e2a29f1.png"/></a></span>
+            </div>
+            
+            <div class="copyright">Copyright ©  2020 Berkeley Sakura Cannestra</div>
+
+            
+        </div> 
+        
+    </body>
+    
+</html>
