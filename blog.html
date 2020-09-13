@@ -5,7 +5,6 @@
     <head>
        <title>B. Sakura Cannestra</title> 
        
-
 <!------------------------------ LINKS TO FONTS! ------------------------->
     
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:regular,bold,black|Raleway:medium,bolditalic,mediumitalic|Lora:bold' type='text/css'>
@@ -32,8 +31,6 @@
 <meta name="msapplication-square150x150logo" content="img/favicomatic/mstile-150x150.png" />
 <meta name="msapplication-wide310x150logo" content="img/favicomatic/mstile-310x150.png" />
 <meta name="msapplication-square310x310logo" content="img/favicomatic/mstile-310x310.png" />
-
-<!-- here is the CSS -------------->
     
 <style type="text/CSS">
     
@@ -51,38 +48,38 @@ html, body {
     overflow-x: hidden;
 }
 
-/*---------------------------------- NAVBAR -------------------------------------*/
+/********************** NAVBAR *******************************************/
     
 #navbar {
+    background-color: #bad9e5;
     width: 100%;
-    height: 100px;
-    position: relative;
-    top: 120px;
+    height: 140px;
+    border-bottom: solid 4px #123456;
 }
 
 #navbar .navbar-icon-holder {
-    width: 200px;
-    height: 200px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
-    border: 20px;
+    border: 15px;
     border-color: #538FB5;
     border-style: solid;
     background-color: #538FB5;
     overflow: hidden;
     position: relative;
-    bottom: 20px;
-    left: 4%;
+    top: 24px;
+    left: 6%;
 }
 
 #navbar .navbar-icon {
     width: auto;
-    height: 250px;
+    height: 120px;
     margin: 15px;
     overflow: hidden;
     background-color: none;
     position: relative;
-    bottom: 60px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
 }
 
 
@@ -92,8 +89,8 @@ html, body {
     font-weight: 1000;
     color: #123456;
     position: relative;
-    bottom: 320px;
-    left: 30%;
+    bottom: 128px;
+    left: 25%;
 }
 
 #navbar .navbar-subtitle {
@@ -101,14 +98,14 @@ html, body {
     font-size: 20px;
     color: #123456;
     position: relative;
-    left: 30%;
-    bottom: 330px;
+    left: 25%;
+    bottom: 134px;
 }
 
 #navbar #navbar-links {
     position: relative;
-    bottom: 320px;
-    left: 29%;
+    bottom: 120px;
+    left: 24%;
     font-family: 'Raleway', sans-serif;
     font-style: italic; 
     font-size: 16px;
@@ -136,34 +133,97 @@ html, body {
     background-color: #123456;
 }
  
-/*----------------------------------------------TEXT CSS ---------------------------------------------*/
 
-#aboutwords {
-    width: 56vw;
-    color: #123456;
-    font-size: 16px;
-    font-weight: 700px;
-    background-color: #bad9e5;
+/* ----------------------------------------- END NAVBAR CSS ------------------------------------------ */
+  
+/* ----------------------------------------- BEGIN POST CSS -------------------------------------------*/  
+
+
+#contenttwo {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
-    left: 26%;
-    top: 60px;
-    margin: 12px;
-    padding: 8px 12px 8px 20px;
-    border-radius: 50px;
+    top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: auto;
 }
 
-/* -------------------------------------- BOTTOMBAR CSS ---------------------------------------- */
+#contenttwo #entry {
+    width: 360px;
+    background-color: #bad9e5;
+    border-radius: 25px;
+    margin: 12px;
+    padding: 0 0 8px 0;
+}
+
+#contenttwo #entry .entrytitle a {
+	text-decoration: none;
+	color: #123456;
+}
+
+#contenttwo #entry .entrytitle a:hover {
+	color: #f4f8fc;
+	text-decoration: underline;
+}
+
+#contenttwo #entry .entrytitle {
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #123456;
+    margin: 12px 12px 4px 12px;
+}
+
+#contenttwo #entry #entryinfo {
+    font-family: 'Lato', sans-serif;
+    color: #123456;
+    margin: 0px 12px 12px 12px;
+}
+
+#contenttwo #entry .journoimg {
+    width: 360px;
+    height: 220px;
+    margin: 0 0 10px 0;
+    background-color: #538FB5;
+    border-radius: 25px;
+}
+
+#contenttwo #entry .journoimg img {
+    width: 320px;
+    height: 180px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 25px;
+}
+
+#contenttwo #entry #entryinfo .entrydetails {
+    font-size: 18px;
+}
+
+#contenttwo #entry #entryinfo .entrydate {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+#conntenttwo #entry #entryinfo .entryexcerpt {
+
+}
+
+
+/* ----------------------------------------- END POST CSS -------------------------------------------- */
+/* -------------------------------------- BEGIN BOTTOMBAR CSS ---------------------------------------- */
  
 
 #bottombar {
-    width: 400px;
+    bottom: 0px;
+    width: 100%;
     height: 100px;
     background-color: #bad9e5;
     margin-top: 80px;
-    position: relative;
-    bottom: 10px;
-    left: 24%;
-    border-radius: 50px;
+    border-top: solid 4px #123456;
 }
 
 #bottombar #socials {
@@ -196,15 +256,18 @@ html, body {
 }
 
 
-/*-------------------------------------------- SCREEN ADJUSTMENTS/ADDENDUMS ---------------------------------------*/
-
-
+/*------------------------------------------------------- SCREEN ADJUSTMENTS/ADDENDUMS ------------------------------------------------*/
+@media screen and (max-width: 1200px) {
+    #contenttwo {
+        width: 900px;
+    }
+}
 
 </style>
     
     </head>
     
-<!------------------------------------------- END OF CSS, BEGINNING OF HTML ------------------------------------------------->
+<!------------------------------------------------------ END OF CSS, BEGINNING OF HTML --------------------------------------------------------------------->
     <body>
         
 <!--------------------- NAVBAR ------------------------------------------> 
@@ -225,17 +288,23 @@ html, body {
         </div>  
         
 <!--------------------------- POSTS ------------------------------------->
-        <div id="aboutwords">
-            <p>Hi there! My name is B. Sakura Cannestra and I am an aspiring journalist and creative writer based in San Jose, CA. </p>
+        <div id="contenttwo">
+            <div id="entry">
+                <div class="journoimg">
+                    <img src="img/blog/masks1.png"/>
+                </div>
+                <div class="entrytitle">
+                    <a href="https://medium.com/@bsakuracannestra/the-mask-debate-then-and-now-707df3c756ab?sk=0e4013bceedfc2cd0b53d871baf8083e">The Mask Debate: Then and Now</a>
+                </div>
+                <div id="entryinfo">
+                    <div class="entrydate">Published Sept. 13, 2020</div>
+                    <div class="entryexcerpt">Looking at the 2020 COVID-19 pandemic’s mask debates through comparisons with the 1918 Influenza pandemic.</div>
+                </div>
+            </div>
 
-			<p>I graduated in the class of 2020 from UC Berkeley with a Bachelor’s Degree in English and minors in History and Creative writing. While in college, I worked for The Daily Californian newspaper for four years, where I wrote about topics ranging from student lobbying to the Berkeley city government to protests. I particularly loved stories on governmental processes, ranging from the student government all the way to national topics! Besides reporting, I also love researching how the past impacts today. Check out my <a href="index.html" style="text-decoration: none;color:#123456">journalism <b><i>Clips</i></b> here</a>.</p>
 
-			<p>The word “story” has another insinuation, too — I love writing short fiction and poetry, and I hope to write and illustrate my own webcomic one day. I've always had a passion for creative writing, and I'd love for you to read some of my pieces. Check out my <a href="creative.html" style="text-decoration: none;color:#123456"><b><i>Creative</i></b> tab</a> for more. </p>
-
-			<p>Feel free to reach out — you can contact me at <span style=”text-decoration: none”> bearcannestra@gmail.com</span>!</p>
-
-            
         </div>
+
 
 
 <!------------------------ ITS THE BOTTOM BAR !!! -------------------->        
