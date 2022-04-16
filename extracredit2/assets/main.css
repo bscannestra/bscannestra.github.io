@@ -1,0 +1,79 @@
+html, body {
+	font-family: 'Playfair Display', serif;
+	background-color: #f4f4f4;
+	font-size: 24px;
+}
+
+main {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 1em;
+	font-weight: 600;
+	margin: 60px 0 0 0;
+	transition: font-size 5s linear;
+}
+
+h1:hover {
+	font-size: 3em;
+	transition: font-size 5s linear;
+}
+
+h2 {
+	font-size: 1em;
+	font-weight: 400;
+	margin: 20px 0 0 0;
+}
+
+p {
+	font-size: 0.8em;
+}
+
+main:first-letter {
+	font-size: 1.8em;
+	vertical-align: middle;
+	font-weight: 600;
+	background-color: #A0BBA4;
+	padding: 0 12px;
+}
+
+button {
+	font-family: 'Playfair Display', serif;
+	font-size: 0.6em;
+	margin: 12px 0;
+	padding: 10px 16px;
+	background-color: #394A65;
+	color: #f4f4f4;
+	border: none;
+}
+
+#expander {
+	width: 100px;
+	transition: width 2s linear
+}
+
+#expander:active {
+	width: 800px;
+	transition: width 2s linear;
+}
+
+#focusing {
+	background-color: #394A65;
+	color: #f4f4f4;
+	transition: background-color 1s linear, color 1s linear;
+}
+
+#focusing:focus {
+	background-color: #A0BBA4;
+	color: #000000;
+	transition: background-color 1s linear, color 1s linear;
+}
+
+
