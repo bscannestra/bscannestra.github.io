@@ -3,7 +3,7 @@ body {
 	background-color: #A5A6A8;
 	transition: background-color 0.5s ease;
 	font-family: Bitter, serif;
-	font-size: 24px;
+	font-size: 36px;
 	margin: 0;
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -214,8 +214,8 @@ footer {
 
 	.rightcontainer {
 		width: 45%;
-		margin-left: 25%;
-		margin-right: 15%;
+		margin-left: 35%;
+		margin-right: 5%;
 	}
 
 	.bigspace {
@@ -283,19 +283,6 @@ footer {
 		background-color: rgba(244, 244, 244, 0.5);
 	}
 }
-
-@keyframes floatingUp {
-	0% {
-		transform: translateY(100px);
-	}
-	100% {
-		transform: translateY(-2800px);
-	}
-}
-
-
-
-/*CHECK THIS https://codepen.io/Mark_Bowley/pen/PozwyP*/
 
 
 
