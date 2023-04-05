@@ -2,6 +2,7 @@ body {
 	background-color: #FFFCF9;
 	color: #120302;
 	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
 	margin:  0;
 	word-wrap: break-word;
 }
@@ -16,16 +17,16 @@ header {
 	height: 100px;
 	width: auto;
 	float: left;
-	padding-left: 5%;
-	padding-top: 10px;
+	margin-left: 5%;
+	margin-top: 10px;
 }
 
 /* navlinks content */
 
 nav {
 	float: right;
-	padding-right: 12%;
 	padding-top: 40px;
+	padding-right: 8vw;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -36,20 +37,22 @@ a {
 }
 
 .navlink {
-	font-weight: normal;
-	color: #120302;
-	margin-right: 20px;
+	font-weight: bold;
+	color: #3B527D;
+	padding-right: 10px;
+	padding-left: 10px;
 	text-decoration: none;
-	transition: font-weight 20ms ease;
+	transition: color 0.5s ease-in;
+}
+
+.navlinkborder {
+	border-right: solid 2px #120302;
 }
 
 .navlink:hover {
-	font-weight: bold;
+	color: #B4D6E4;
 }
 
-/* ask if there's any way to make the link special when it's the page that you're on currently, so i can automate that */
-
-/* i asked, it's in javascript so ill learn it eventually */
 
 /***************************************** main content ***************************************/
 
@@ -75,7 +78,9 @@ main {
 
 section {
 	width: 90%;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+	border-bottom: solid 2px #120302;
 }
 
 h1 {
@@ -104,6 +109,8 @@ h2 {
 
 footer {
 	height: 80px;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 #icons {
@@ -135,6 +142,38 @@ footer {
 #hwheader {
 	text-align: center;
 	padding-top: 24px;
+}
+
+
+/************************************** media queries ************************************/
+
+@media (max-width:700px) {
+	#navname {
+		display: block;
+		float: none;
+		height: 75px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	nav {
+		display: block;
+		float: none;
+	}
+
+	#navbox {
+		display: block;
+		text-align: center;
+	}
+
+	#headshot {
+		height: 400px;
+		width: auto;
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 }
 
 

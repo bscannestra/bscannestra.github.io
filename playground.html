@@ -65,16 +65,20 @@ a {
 }
 
 .navlink {
-    font-weight: normal;
+    font-weight: bold;
     color: #120302;
-    margin-right: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
     text-decoration: none;
+    transition: color 0.5s ease-in;
+}
+
+.navlinkborder {
+    border-right: solid 2px #120302;
 }
 
 .navlink:hover {
-    font-weight: bold;
-    transition-duration: 20ms;
-    transition-property: font-weight;
+	color: #B4D6E4;
 }
 
 #icons {
@@ -258,8 +262,8 @@ a {
             <div id="boxone">
                 <a href="./index.html"><img src="./img/name.png" alt="B. Sakura Cannestra" id="navname"> </a>
                 <nav>
-                    <a href="./index.html" class="navlink">ABOUT</a>
-                    <a href="./reporting.html" class="navlink">REPORTING</a>
+                    <a href="./index.html" class="navlink navlinkborder">ABOUT</a>
+                    <a href="./reporting.html" class="navlink navlinkborder">REPORTING</a>
                     <a href="./narrative.html" class="navlink">NARRATIVE</a>
                 </nav>
             </div>
