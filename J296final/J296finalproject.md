@@ -1,4 +1,4 @@
-# J296 Final Project: Scraping the Electronic Software Rating Board's public game rating database
+# J296 Final Project: Scraping the Entertainment Software Rating Board's public game rating database
 
 By B. Sakura Cannestra
 
@@ -10,7 +10,7 @@ This mechanic — loot boxes — is a form of in-game purchase where a player sp
 
 Many nations around the world have considered regulating games that feature loot boxes. Most recently in March, [the Australian federal government announced]( https://www.gamesindustry.biz/australia-proposes-labeling-games-with-loot-boxes-m-for-15-and-over) plans to rate all games containing simulated gambling for players over 18, and any game containing loot boxes for players over 15.
 
-In the United States, the only self-regulatory body for the video game industry is the Electronic Rating Software Board, or ESRB. The ESRB provides video game ratings for parents and consumers, along with information the game’s contents. Most platform holders, such as Sony, Nintendo and Microsoft, require games to be rated by the ESRB before they can be playable on their consoles.
+In the United States, the only self-regulatory body for the video game industry is the Entertainment Rating Software Board, or ESRB. The ESRB provides video game ratings for parents and consumers, along with information the game’s contents. Most platform holders, such as Sony, Nintendo and Microsoft, require games to be rated by the ESRB before they can be playable on their consoles.
 
 The ESRB currently has three descriptors related to gambling — “Simulated Gambling”, “Gambling Themes” and “Real Gambling.” There are 403 games featuring the “Simulated Gambling” descriptor and the amount of gambling present in each game varies. In “Stardew Valley,” there is a casino location where players can wager digital coins in slot machines and card games. In “Poker Club,” gameplay centers around simulated poker games and tournaments.
 
@@ -63,7 +63,7 @@ Leon is a PhD fellow at IT University of Cophenhagen. He has been researching th
 * Max Jay
     * mjay@esrb.org
 
-Max is the associate director for communications at the Electronic Software Rating Board, or ESRB, which is a video game industry self-regulatory board that provides video game ratings for parents and consumers. 
+Max is the associate director for communications at the Entertainment Software Rating Board, or ESRB, which is a video game industry self-regulatory board that provides video game ratings for parents and consumers. 
 
 I also used various online sources including the ESRB website, past reporting on Australia's proposed loot box regulation and the ESRB's adoption of "In-Game Purchases" and "In-Game Purchases (Includes Random Items)". 
 
