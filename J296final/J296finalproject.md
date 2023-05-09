@@ -16,12 +16,12 @@ The ESRB currently has three descriptors related to gambling — “Simulated Ga
 
 Only 403 of the 32,445 games rated by the ESRB as of May 2, 2023, have the “Simulated Gambling” descriptor. Of those 403, over half are rated “T for Teens”.
 
-!(Bar graph of the five ESRB rating categories, showing how many video games do and do not have the "Simulated Gambling" descriptor. The rating with the most games featuring this descriptor is "T for Teens," with 216 games having the descriptor and 6, 886 games without the descriptor.)[/img/how-many-video-games-feature-simulated-gambling-.png]
+![Bar graph of the five ESRB rating categories, showing how many video games do and do not have the "Simulated Gambling" descriptor. The rating with the most games featuring this descriptor is "T for Teens," with 216 games having the descriptor and 6, 886 games without the descriptor.](/img/how-many-video-games-feature-simulated-gambling-.png)
 [Link to Datawrapper](https://datawrapper.dwcdn.net/KAlas/3/)
 
 Games with "Simulated Gambling" are also slightly more common on PC than console, with 185 PC-only games bearing the descriptor compared to 157 console-only games. 30 games with the descriptor are playable on both PC and console. 
 
-!(Bar chart denoting the prevalence of games with the "Simulated Gambling" descriptor on these platforms: "PC", "Console", "Other", and "Both". While the total number of games with this descriptor is small, it's significant to see how the "Simulated Gambling" descriptor is utilized.)[./img/what-console-are-simulated-gambling-games-playable.png]
+![Bar chart denoting the prevalence of games with the "Simulated Gambling" descriptor on these platforms: "PC", "Console", "Other", and "Both". While the total number of games with this descriptor is small, it's significant to see how the "Simulated Gambling" descriptor is utilized.](./img/what-console-are-simulated-gambling-games-playable.png)
 [Link to Datawrapper](https://datawrapper.dwcdn.net/IF8oe/1/)
 
 According to ESRB spokesperson Max Jay, if a game garnered the “Real Gambling” descriptor, it would be automatically rated “Adults Only,” as this descriptor denotes games that use real-world money for gambling. However, there are currently no games listed on the ESRB’s online ratings search using the “Real Gambling” content description.
