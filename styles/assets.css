@@ -21,7 +21,7 @@ header {
 	margin-top: 10px;
 }
 
-/* navlinks content */
+/*********************************** navlinks content ***********************************/
 
 nav {
 	float: right;
@@ -33,7 +33,12 @@ nav {
 
 a {
 	text-decoration: none;
+	transition: color 0.5s ease-in;
 	color: #120302;
+}
+
+a:hover {
+	color: #3B527D;
 }
 
 .navlink {
@@ -74,6 +79,11 @@ main {
 .intro {
 	font-size: 20px;
 	line-height: 22px;
+}
+
+ul {
+	list-style: circle inside;
+
 }
 
 section {
