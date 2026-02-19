@@ -227,7 +227,7 @@ h3 {
     }
 
     #nametag {
-        height: 5rem;
+        height: 4rem;
         width: auto;
         margin-top: 10px;
     }
@@ -278,12 +278,12 @@ h3 {
     #aboutme {
         width: 80%;
         float: none;
-        margin: 0 0 10% 50px;
+        margin: 0 0 20% 50px;
     }
 
     #contentbox {
         width: 80%;
-        margin: 300px 10% 0 10%;
+        margin: 80% 10% 0 10%;
     }
 
     h1 {
