@@ -1,0 +1,290 @@
+
+body {
+	background-color: #A5A6A8;
+	transition: background-color 0.5s ease;
+	font-family: Bitter, serif;
+	font-size: 36px;
+	margin: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p {
+	font-size: 0.8em;
+	font-weight: 500;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.6em;
+	font-weight: 700;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.8em;
+	margin: 0;
+}
+
+#continueBox {
+	position: relative;
+	top: 500px;
+	animation: continueBlinker 2s linear infinite;
+}
+
+#byline {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	margin: 8px 0 8px;
+	text-align: center;
+}
+
+.container {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.textbox {
+	background-color: rgba(244, 244, 244, 0.75);
+	padding: 20px 16px;
+}
+
+.bigspace {
+	margin-top: 800px;
+}
+
+.smallspace {
+	margin-top: 400px;
+}
+
+.frozenpicture {
+	position: fixed;
+	top: 0;
+	transition: opacity 0.3s linear;
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+}
+
+.frozenportrait__center {
+	background-position: top center;
+	background-size: 220%;
+}
+
+.frozenportrait__right {
+	background-size: 140%;
+	background-position: top 100% right 10%;
+}
+
+.frozenportrait__left {
+	background-size: 140%;
+	background-position: top 100% left 10%;
+}
+
+.hiding {
+	opacity: 0%;
+	transition: opacity 0.3s linear;
+}
+
+/********************************the special IDs on the photos*******************************/
+
+#alarm {
+	z-index: -1;
+}
+
+#turnoff {
+	z-index: -3;
+}
+
+#stretch {
+	z-index: -4;
+}
+
+#ground {
+	z-index: -2;
+}
+
+#getup {
+	z-index: -5;
+}
+
+#water {
+	height: 180%;
+	opacity: 100%;
+	margin-top: 200px;
+	transition: opacity 0.1s linear;
+	position: absolute;
+	right: -80%;
+	z-index: -1;
+}
+
+#vroom {
+	z-index: -7;
+}
+
+#imthirteen {
+	z-index: -2;
+}
+
+#imseventeen {
+	z-index: -2;
+}
+
+#imtwentythree {
+	z-index: -2;
+}
+
+/********************************bubbles styling********************************/
+
+.bubbles {
+	width: 40px;
+	z-index: 3;
+	animation: floatingBubbles 4s linear 1s infinite;
+}
+
+/********************************footer styles*******************************/
+
+footer {
+	font-size: 0.8em;
+	color: #f4f4f4;
+	padding: 16px 20px 24px 20px;
+	background-color: #040404;
+}
+
+#footerheadline {
+	font-family: Bitter, sans-serif;
+}
+
+#footerbyline {
+	font-family: Raleway, sans-serif;
+}
+
+#backtotop {
+	padding: 12px 20px;
+	font-family: Bitter, serif;
+	font-weight: 700;
+	font-size: 0.8em;
+	color: #040404;
+	text-decoration: none;
+}
+
+#backtotop:hover {
+	color: #A5A6A8;
+	transition: color 0.5s ease-out;
+}
+
+#buttonbox {
+	width: 200px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #f4f4f4;
+	color: #040404;
+	text-align: center;
+	padding: 20px 0px;
+	transition: color 0.5s ease-out;
+}
+
+#buttonbox:hover {
+	background-color: #040404;
+	transition: background-color 0.5s ease-out;
+}
+
+
+
+
+/******************************* MEDIA QUERIES *******************************/
+
+@media (min-width: 1000px) {
+
+	.container {
+		width: 50%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.leftcontainer {
+		width: 45%;
+		margin-left: 15%;
+		margin-right: 25%;
+	}
+
+	.rightcontainer {
+		width: 45%;
+		margin-left: 35%;
+		margin-right: 5%;
+	}
+
+	.bigspace {
+		margin-top: 1000px;
+	}
+
+	.smallspace {
+		margin-top: 600px;
+	}
+
+	.frozenpicture {
+		position: fixed;
+		top: 0;
+		transition: opacity 0.1s linear;
+		height: 100vh;
+		width: 100vw;
+		background-repeat: no-repeat;
+	}
+
+	.frozenportrait__center {
+		background-size: 40%;
+		background-position: top 40% left 50%;
+	}
+
+	.frozenportrait__right {
+		background-size: contain;
+		background-position: top 60% right 40%;
+	}
+
+	.frozenportrait__left {
+		background-size: contain;
+		background-position: top 60% left 40%;
+	}
+
+	#water {
+		width: 100vw;
+		opacity: 100%;
+		transition: opacity 0.5s linear;
+		position: absolute;
+		left: 0%;
+		z-index: -1;
+	}
+
+	#vroom {
+		background-size: 80%;
+		background-position: top center;
+	}
+
+	#footerbox {
+		width: 60%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+}
+
+@keyframes continueBlinker {
+	0% {
+		background-color: rgba(244, 244, 244, 0.5);
+	}
+	50% {
+		background-color: rgba(244, 244, 244, 1.0);
+	}
+	100% {
+		background-color: rgba(244, 244, 244, 0.5);
+	}
+}
+
+
+
+
+

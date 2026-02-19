@@ -1,191 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-	background-color: #FFFCF9;
-	color: #120302;
-	font-family: 'Raleway', sans-serif;
-	font-size: 20px;
-	margin:  0;
-	word-wrap: break-word;
+    background-color: #e4eff1;
+    color: #0b0a0a;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    word-wrap: normal;
 }
 
 header {
-	width: 100%;
-	height: 120px;
+    width: 100%;
+    height: 120px;
 	margin-bottom: 20px;
-}
-
-#navname {
-	height: 100px;
-	width: auto;
-	float: left;
-	margin-left: 5%;
-	margin-top: 10px;
-}
-
-/*********************************** navlinks content ***********************************/
-
-nav {
-	float: right;
-	padding-top: 40px;
-	padding-right: 8vw;
-	font-size: 20px;
-	font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    /* this is using a flexbox code to center the nametag below */
 }
 
 a {
-	text-decoration: none;
-	transition: color 0.25s ease-in;
-	color: #120302;
+    font-family: 'Young Serif', monospace;
+    color: #0b0a0a;
+    text-decoration: none;
 }
 
-a:hover {
-	color: #3B527D;
+#nametag {
+    height: 108px;
+    width: auto;
+    margin-top: 10px;
+    background-color: transparent;
 }
 
-.navlink {
-	font-weight: bold;
-	color: #3B527D;
-	padding-right: 10px;
-	padding-left: 10px;
-	text-decoration: none;
-	transition: color 0.5s ease-in;
-}
-
-.navlinkborder {
-	border-right: solid 2px #120302;
-}
-
-.navlink:hover {
-	color: #B4D6E4;
-}
-
-
-/***************************************** main content ***************************************/
-
-main {
-	margin-left: 10%;
-	margin-right: 10%;
-	line-height: 24px;
-	padding-top: 32px;
+#topbox {
+    height: 400px;
 }
 
 #headshot {
-	height: 400px;
-	width: auto;
-	float: left;
-	margin-right: 24px;
-	margin-bottom: 24px;
+    display: block;
+    margin: 4% 10%;
 }
 
-.intro {
-	font-size: 20px;
-	line-height: 22px;
+#headshotbox {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 50px;
+    z-index: 2;
 }
 
-ul {
-	list-style: circle inside;
-
+#headshotbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-section {
-	width: 90%;
-	margin-bottom: 20px;
-	padding-top: 20px;
-	border-bottom: solid 2px #120302;
+.headshotcircle {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+}
+
+#bluecircle {
+    background-color: #003249;
+    z-index: -2;
+    margin-bottom: -450px;
+    position: relative;
+    bottom: 330px;
+    left: 36px;
+}
+
+#pinkcircle {
+    background-color: #997c82;
+    z-index: -1;
+    margin-bottom: -100px;
+    position: relative;
+    bottom: 164px;
+    left: 52px;
+}
+
+#aboutme {
+    width: 45%;
+    float: right;
+    margin-right: 8%;
+    margin-top: -430px;
+    z-index: 2;
+}
+
+p.about {
+    margin-bottom: 3%;
+}
+
+a.socialink{
+    padding: 2px 4px;
+    position: relative;
+    background-color: transparent;
+    transition: background-color 1.5s;
+}
+
+a.socialink:hover {
+    background-color: #997c82;
+}
+
+.socialinkbox {
+    padding: 0 5px;
+}
+
+.biolink {
+    transition: background-color 1.5s;
+}
+
+.biolink:hover {
+    background-color: #997c82;
+}
+
+#contentbox {
+    width: 80%;
+    margin: 0 10%;
 }
 
 h1 {
-	font-size: 28px;
-	padding: 0;
-	margin: 0;
+    font-family: 'Young Serif', 'Courier New', Courier, monospace;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    color: #003249;
+    margin-left: 10%;
+    font-size: 3rem;
 }
 
-.headline a:hover {
-	transition: color;
-	transition-duration: 20ms;
-	transition-timing-function: ease-in;
+p {
+    margin: 0;
 }
 
-.headline a:hover {
-	color: #B4D6E4;
+h2{
+    margin: 2% 0 0 0;
 }
 
-h2 {
-	font-size: 20px;
-	font-weight: normal;
+h2 a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 5px 0;
+    transition: background-color 1.5s;
 }
 
-
-/************************************** footer content ************************************/
-
-footer {
-	height: 80px;
-	margin-top: 50px;
-	margin-bottom: 30px;
+h2 a:hover{
+    background-color: #997c82;
 }
 
-#icons {
-	padding-left: 16%;
-	float: left;
+.selectstory {
+    padding-bottom: 2%;
+    border-bottom: 1px dotted #0b0a0a;
 }
 
-.socialicon {
-	height: 50px;
-	width: 50px;
-	margin-right: 20px;
-	padding: 8px;
-	border-radius: 20px;
-	background-color: #B4D6E4;
-	transition-property: background-color;
-	transition-duration: 1s;
-	transition-timing-function: ease;
+#selectstorynobottom {
+    border: 0;
 }
 
-.socialicon:hover {
-	background-color: #3B527D;
+#databox {
+    column-count: 3;
+    column-width: 33%;
+}
+
+.datagraph {
+    max-width: 100%;
+}
+
+.datastory {
+    padding: 10px 10px;
+    border: 1px dotted #0b0a0a;
+    margin: 0 0 2rem 0;
+}
+
+h3 {
+    font-family: 'Young Serif', 'Courier New', Courier, monospace;
+    color: #0b0a0a;
+    margin: 6% 0 0 10%;
+    font-size: 2rem;
+}
+
+.seriesintro {
+    width: 80%;
+}
+
+.series {
+    margin: 0 0 0 10%;
+}
+
+.personalessay {
+    border-bottom: 1px dotted #0b0a0a;
+    padding-bottom: 2%;
+}
+
+#personalnobottom {
+    border: none;
 }
 
 #copyright {
-	padding-top: 20px;
-	font-size: 16px;
+    font-family: 'Young Serif', 'Courier New', Courier, monospace;
+    color: #0b0a0a;
+    margin: 5% 0 5% 10%;
 }
 
-#hwheader {
-	text-align: center;
-	padding-top: 24px;
+#topbutton {
+    float: right;
+    margin-right: 10%;
+    transition: background-color 1.5s;
 }
 
-
-/************************************** media queries ************************************/
-
-@media (max-width:700px) {
-	#navname {
-		display: block;
-		float: none;
-		height: 75px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
-	nav {
-		display: block;
-		float: none;
-	}
-
-	#navbox {
-		display: block;
-		text-align: center;
-	}
-
-	#headshot {
-		height: 400px;
-		width: auto;
-		float: none;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
+#topbutton:hover {
+    background-color: #997c82;
 }
 
 
 
-/* extra spaces at the bottom bc i like being able to read it all :> */
+/************************** FOR MOBILE ***************************/
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    #nametag {
+        height: 68px;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    #headshot {
+        display: block;
+        margin: 5% 10% 0 10%;
+    }
+
+    #headshotbox {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 20%;
+        z-index: 2;
+    }
+
+    #headshotbox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .headshotcircle {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
+
+    #bluecircle {
+        background-color: #003249;
+        z-index: -2;
+        position: relative;
+        margin-bottom: -250px;
+        bottom: 220px;
+        left: 16%;
+    }
+
+    #pinkcircle {
+        background-color: #997c82;
+        z-index: -1;
+        position: relative;
+        bottom: 165px;
+        left: 20%;
+    }
+
+    #aboutme {
+        width: 80%;
+        float: none;
+        margin: 0 0 0 50px;
+    }
+
+    #contentbox {
+        width: 80%;
+        margin: 300px 10% 0 10%;
+    }
+
+    h1 {
+        font-family: 'Young Serif', 'Courier New', Courier, monospace;
+        margin-top: 24%;
+        margin-bottom: 8%;
+        color: #003249;
+        margin-left: 10%;
+        font-size: 2.4rem;
+    }
+
+    h2 a {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: background-color 1.5s;
+    }
+
+    h2 {
+        line-height: 1.2rem;
+        margin: 5px 0;
+    }
+
+    .selectstory {
+        margin: 2% 0 4% 0;
+        padding-bottom: 10px;
+        font-size: 14px;
+        border-bottom: 1px dotted #0b0a0a;
+    }
+
+    #selectstorynobottom {
+        border: 0;
+    }
+
+    #databox {
+        column-count: 1;
+        font-size: 14px;
+    }
+
+    .datastory {
+        padding: 20px 20px;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    #seriesbox {
+        font-size: 14px;
+    }
+
+    .oneseries {
+        margin-top: 10%;
+    }
+
+    .seriesintro {
+        margin: 2% 2% 5% 2%;
+    }
+
+    .seriesstory {
+        margin-top: 2%;
+    }
+
+    .personalessay {
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+
+    footer {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #topbutton {
+        float: none;
+        display: block;
+        margin-top: 2%;
+    }
+}
